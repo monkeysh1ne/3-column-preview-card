@@ -2,4 +2,41 @@
 .body-copy {
   font-size: 15px;
   font-family: "Lexend Deca" sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html h1 h2 h3 h4 btn {
+  background-color: #f2f2f2;
+}
+
+body {
+  position: relative;
+  color: rgba(255, 255, 255, 0.75);
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top: 100px;
+  margin: 0 20%;
+  border: solid 1px black;
+  padding: 70px;
+}
+.container .card {
+  position: relative;
+}
+.container .card:first-child {
+  background-color: #e38826;
+}
+.container .card:nth-child(even) {
+  background-color: #006970;
+}
+.container .card:last-child {
+  background-color: #004241;
 }/*# sourceMappingURL=styles.css.map */

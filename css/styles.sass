@@ -1,2 +1,34 @@
 @import helpers
 @import typography
+
+*
+  box-sizing: border-box
+  margin: 0
+
+html h1 h2 h3 h4 btn
+  background-color: $very-light-gray
+
+body
+  position: relative
+  color: $transparent-white
+  height: 100vh
+
+.container
+  position: relative
+  display: flex
+  flex-direction: row
+  // width: 80%
+  top: 100px
+  // left: 10%
+  margin: 0 20%
+  border: solid 1px black
+  padding: 70px
+  .card
+    // 60% width available
+    position: relative
+    &:first-child
+      background-color: $first-card-bg
+    &:nth-child(even)
+      background-color: $second-card-bg
+    &:last-child
+      background-color: $third-card-bg
