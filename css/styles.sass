@@ -44,7 +44,21 @@ body
       padding: 2rem 0
     .btn-sedan
       color: $first-card-bg
+      &:hover
+        background-color: $first-card-bg
+        color: $very-light-gray
     .btn-suv
       color: $second-card-bg
+      &:hover
+        background-color: $second-card-bg
+        color: $very-light-gray
     .btn-luxury
       color: $third-card-bg
+      &:hover
+        background-color: $third-card-bg
+        color: $very-light-gray
+
+  // Mobile
+  @media(max-width: 375px)
+    display: flex
+    flex-direction: column
