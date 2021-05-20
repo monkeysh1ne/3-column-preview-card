@@ -14,19 +14,19 @@ body
   height: 100vh
   background-color: $very-light-gray
   font-family: 'Lexend Deca', sans-serif
-  line-height: 1.8rem
+  line-height: 1.7rem
 
 .container
   position: relative
   display: flex
   flex-direction: row
-  width: 80%
+  width: 924px
   height: 795px
-  top: 100px
-  left: 10%
+  top: 10%
+  left: 15%
 
   .card
-    padding: 70px
+    padding: 50px 60px
     height: 499px
     position: relative
     &:first-child
@@ -42,10 +42,9 @@ body
       font-size: 2rem
       text-transform: uppercase
       padding: 2rem 0
-    .btn
-      &:first-child
-        color: $first-card-bg
-      &:nth-child(even)
-        color: $second-card-bg
-      &:last-child
-        color: $third-card-bg
+    .btn-sedan
+      color: $first-card-bg
+    .btn-suv
+      color: $second-card-bg
+    .btn-luxury
+      color: $third-card-bg

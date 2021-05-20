@@ -6,6 +6,17 @@
   cursor: pointer;
   height: 50px;
   width: 150px;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+
+.attribution {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .body-copy {
@@ -28,20 +39,20 @@ body {
   height: 100vh;
   background-color: #f2f2f2;
   font-family: "Lexend Deca", sans-serif;
-  line-height: 1.8rem;
+  line-height: 1.7rem;
 }
 
 .container {
   position: relative;
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 924px;
   height: 795px;
-  top: 100px;
-  left: 10%;
+  top: 10%;
+  left: 15%;
 }
 .container .card {
-  padding: 70px;
+  padding: 50px 60px;
   height: 499px;
   position: relative;
 }
@@ -62,12 +73,12 @@ body {
   text-transform: uppercase;
   padding: 2rem 0;
 }
-.container .card .btn:first-child {
+.container .card .btn-sedan {
   color: #e38826;
 }
-.container .card .btn:nth-child(even) {
+.container .card .btn-suv {
   color: #006970;
 }
-.container .card .btn:last-child {
+.container .card .btn-luxury {
   color: #004241;
 }/*# sourceMappingURL=styles.css.map */
