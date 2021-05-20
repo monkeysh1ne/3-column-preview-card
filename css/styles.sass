@@ -12,23 +12,40 @@ body
   position: relative
   color: $transparent-white
   height: 100vh
+  background-color: $very-light-gray
+  font-family: 'Lexend Deca', sans-serif
+  line-height: 1.8rem
 
 .container
   position: relative
   display: flex
   flex-direction: row
-  // width: 80%
+  width: 80%
+  height: 795px
   top: 100px
-  // left: 10%
-  margin: 0 20%
-  border: solid 1px black
-  padding: 70px
+  left: 10%
+
   .card
-    // 60% width available
+    padding: 70px
+    height: 499px
     position: relative
     &:first-child
       background-color: $first-card-bg
+      border-radius: 5px 0 0 5px
     &:nth-child(even)
       background-color: $second-card-bg
     &:last-child
       background-color: $third-card-bg
+      border-radius: 0 5px 5px 0
+    h1
+      font-family: 'Big Shoulders Display', sans-serif
+      font-size: 2rem
+      text-transform: uppercase
+      padding: 2rem 0
+    .btn
+      &:first-child
+        color: $first-card-bg
+      &:nth-child(even)
+        color: $second-card-bg
+      &:last-child
+        color: $third-card-bg
