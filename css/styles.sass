@@ -9,7 +9,7 @@ html h1 h2 h3 h4 btn
   background-color: $very-light-gray
 
 body
-  position: relative
+  // position: relative
   color: $transparent-white
   height: 100vh
   background-color: $very-light-gray
@@ -19,7 +19,7 @@ body
 .container
   position: relative
   display: flex
-  flex-direction: row
+  // flex-direction: row
   width: 924px
   height: 795px
   top: 10%
@@ -28,7 +28,7 @@ body
   .card
     padding: 50px 60px
     height: 499px
-    position: relative
+    // position: relative
     &:first-child
       background-color: $first-card-bg
       border-radius: 5px 0 0 5px
@@ -58,7 +58,21 @@ body
         background-color: $third-card-bg
         color: $very-light-gray
 
-  // Mobile
-  @media(max-width: 375px)
+// Mobile
+@media screen and (max-width: 375px)
+  body
+    overflow: auto
+
+  .container
     display: flex
-    flex-direction: column
+    position: relative
+    width: 100vw
+    top: 0
+    left: 0
+    flex-direction: row
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+    background-color: #fff
+  .card:first-child()
+    background-color: purple

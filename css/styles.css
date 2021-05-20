@@ -23,11 +23,6 @@
   text-align: center;
 }
 
-.body-copy {
-  font-size: 15px;
-  font-family: "Lexend Deca" sans-serif;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -38,7 +33,6 @@ html h1 h2 h3 h4 btn {
 }
 
 body {
-  position: relative;
   color: rgba(255, 255, 255, 0.75);
   height: 100vh;
   background-color: #f2f2f2;
@@ -49,7 +43,6 @@ body {
 .container {
   position: relative;
   display: flex;
-  flex-direction: row;
   width: 924px;
   height: 795px;
   top: 10%;
@@ -58,7 +51,6 @@ body {
 .container .card {
   padding: 50px 60px;
   height: 499px;
-  position: relative;
 }
 .container .card:first-child {
   background-color: #e38826;
@@ -98,9 +90,26 @@ body {
   background-color: #004241;
   color: #f2f2f2;
 }
-@media (max-width: 375px) {
+
+@media screen and (max-width: 375px) {
+  body {
+    overflow: auto;
+  }
+
   .container {
     display: flex;
-    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  .card:first-child() {
+    background-color: purple;
   }
 }/*# sourceMappingURL=styles.css.map */
