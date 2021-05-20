@@ -80,7 +80,7 @@ $very-light-gray: hsl(0, 0%, 95%) //(background, headings, buttons)
 ## Resources
 
 W3Schools [https://www.w3schools.com](W3Slink). Invaluable!
-CSS Tricks [https://css-tricks.com](CSS Tricks Home). Again, invaluable!
+CSS Tricks [https://css-tricks.com](CSSTricksHome). Again, invaluable!
 
 ## Author
 
