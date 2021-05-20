@@ -45,7 +45,7 @@ body {
   display: flex;
   width: 924px;
   height: 795px;
-  top: 20%;
+  top: 21%;
   left: 15%;
 }
 .container .card {
@@ -54,14 +54,14 @@ body {
 }
 .container .card:first-child {
   background-color: #e38826;
-  border-radius: 5px 0 0 5px;
+  border-radius: 10px 0 0 10px;
 }
 .container .card:nth-child(even) {
   background-color: #006970;
 }
 .container .card:last-child {
   background-color: #004241;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 10px 10px 0;
 }
 .container .card h1 {
   font-family: "Big Shoulders Display", sans-serif;
@@ -111,13 +111,13 @@ body {
     padding: 10%;
   }
   .container .card:first-child {
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
   }
   .container .card:nth-child(even) {
     border-radius: 0;
   }
   .container .card:last-child {
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 10px 10px;
   }
 
   .attribution {
