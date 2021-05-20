@@ -67,6 +67,7 @@ body
     display: flex
     position: relative
     width: 100vw
+    height: auto
     top: 0
     left: 0
     flex-direction: row
@@ -74,5 +75,13 @@ body
     margin: 0
     padding: 0
     background-color: #fff
-  .card:first-child()
-    background-color: purple
+    padding: 10%
+    .card
+      &:first-child
+        border-radius: 5px 5px 0 0
+      &:nth-child(even)
+        border-radius: 0
+      &:last-child
+        border-radius: 0 0 5px 5px
+  .attribution
+    display: none
